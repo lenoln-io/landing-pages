@@ -1,0 +1,14 @@
+@media (min-width: 860px) {
+  main {
+    max-height: 100vh;
+  }
+
+  .container {
+    grid-template-rows: 20vh 1fr;
+  }
+
+  .container .cards-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(25rem, 23vw));
+  }
+}

@@ -1,0 +1,84 @@
+:root {
+  --main-color: #ffc700;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+
+  background-image: url('../assets/endless-nightmare.png');
+  color: #fff;
+
+  text-align: center;
+  background-size: cover;
+  max-height: 100vh;
+}
+
+main {
+  width: 71.4rem;
+  margin: 16rem auto;
+
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.subtitle {
+  font-weight: 700;
+}
+
+.subtitle span {
+  color: var(--main-color);
+  font-size: 1.6rem;
+}
+
+h1 {
+  color: var(--main-color);
+  font-size: 6.4rem;
+  font-family: 'Emilys Candy', sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.description,
+.read,
+.btn {
+  font-size: 2rem;
+}
+
+.read,
+.btn {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: 'Inter', sans-serif;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1.6rem;
+  margin-top: 6.8rem;
+}
+
+.btn {
+  border: none;
+  background-color: var(--main-color);
+  cursor: pointer;
+
+  opacity: 0.6;
+}
+
+.buttons a {
+  color: #fff;
+}
+
+.buttons a:hover,
+.btn:hover {
+  background-color: var(--main-color);
+  color: black;
+  opacity: 1;
+}
+
+.buttons > * {
+  padding: 12px 32px;
+}
