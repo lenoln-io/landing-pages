@@ -40,7 +40,7 @@ body {
 
 .title {
   font-family: var(--title);
-  font-size: clamp(3.2rem, 7vw + 0.5rem, 6.4rem);
+  font-size: clamp(4.2rem, 7vw + 0.5rem, 6.4rem);
   font-weight: var(--font-weight-400);
   line-height: 12rem;
 }
@@ -55,7 +55,7 @@ body {
 
 .description,
 .buttons > * {
-  font-size: clamp(1.6rem, 2vw + 0.7rem, 2rem);
+  font-size: clamp(1.4rem, 1vw + 0.7rem, 2rem);
 }
 
 .learn {
