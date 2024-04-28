@@ -8,6 +8,10 @@
 
   --title: 'Cinzel', sans-serif;
   --text: 'Inter', sans-serif;
+  font-family: var(--title);
+
+  --font-weight-400: 400;
+  --font-weight-700: 700;
 }
 
 * {
@@ -20,7 +24,6 @@
 
 body {
   text-align: center;
-  font-family: var(--title);
   color: var(--text-color);
   background: url('../assets/travel-expert.png') no-repeat center center / cover;
 }
@@ -32,14 +35,17 @@ body {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-
   gap: 0.4rem;
 }
 
 .title {
-  font-weight: 700;
-  font-size: clamp(3.2rem, 7vw + 0.5rem, 6.4rem);
+  font-size: clamp(3rem, 7vw + 0.5rem, 6.4rem);
+}
+
+.title, .buttons > * {
+  font-weight: var(--font-weight-700);
   text-transform: uppercase;
+
 }
 
 .title span {
@@ -54,8 +60,7 @@ body {
 
 .description {
   font-family: var(--text);
-  font-weight: 400;
-
+  font-weight: var(--font-weight-400);
   color: var(--text-color-description);
 }
 
@@ -63,15 +68,14 @@ body {
   text-decoration: none;
   margin-right: 1.6rem;
   color: var(--text-color);
-
-  &:hover {
-    background-color: var(--main-color);
-    border-radius: 8rem;
-    color: var(--text-color-btn);
-  }
 }
 
 .btn {
+  font-family: var(--title);
+}
+
+.btn,
+.read:hover {
   background-color: var(--main-color);
   border: none;
   border-radius: 8rem;
@@ -85,10 +89,6 @@ body {
 
   & > * {
     padding: 1.6rem 3.2rem;
-
-    font-family: var(--title);
-    text-transform: uppercase;
-    font-weight: 700;
     line-height: 2.4rem;
   }
 }

@@ -1,12 +1,15 @@
 :root {
   font-size: 62.5%;
-  
+
   --main-color: #ffc700;
   --text-color: #fff;
   --text-hover-btn: #000;
 
   --title: 'Emilys Candy', sans-serif;
   --text: 'Inter', sans-serif;
+
+  --font-weight-400: 400;
+  --font-weight-700: 700;
 }
 
 * {
@@ -26,7 +29,7 @@ body {
 
 .container {
   height: 100vh;
-  
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -39,32 +42,40 @@ body {
 }
 
 .subtitle {
-  font-weight: 700;
   font-size: clamp(1rem, 1vw + 0.1rem, 1.6rem);
 }
 
+.subtitle,
+.read,
+.btn {
+  font-weight: var(--font-weight-700);
+}
+
+.title,
 .subtitle span {
   color: var(--main-color);
 }
 
 .title {
-  color: var(--main-color);
   font-size: clamp(4rem, 7.3vw + 1rem, 6.4rem);
   font-family: var(--title);
+  font-weight: var(--font-weight-400);
+}
+
+.title,
+.read,
+.btn {
   text-transform: uppercase;
-  font-weight: 400;
 }
 
 .description,
 .read,
 .btn {
-  font-size: clamp(1.2rem, 1vw + 0.7rem, 2rem) ;
+  font-size: clamp(1.2rem, 1vw + 0.7rem, 2rem);
 }
 
 .read,
 .btn {
-  text-transform: uppercase;
-  font-weight: 700;
   font-family: var(--text);
 }
 
@@ -87,7 +98,7 @@ body {
   }
 }
 
-.buttons a {
+.buttons .read {
   color: var(--text-color);
 
   &:hover {
